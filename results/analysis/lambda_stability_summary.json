@@ -1,0 +1,30 @@
+{
+  "selector": "bidirectional_max_similarity",
+  "reports_per_budget": 54,
+  "budgets": {
+    "10": {
+      "reports": 54,
+      "median": 0.4,
+      "q1": 0.3,
+      "q3": 0.475,
+      "minimum": 0.2,
+      "maximum": 0.6
+    },
+    "25": {
+      "reports": 54,
+      "median": 0.4,
+      "q1": 0.3,
+      "q3": 0.5,
+      "minimum": 0.2,
+      "maximum": 0.6
+    },
+    "50": {
+      "reports": 54,
+      "median": 0.4,
+      "q1": 0.3,
+      "q3": 0.5,
+      "minimum": 0.2,
+      "maximum": 0.6
+    }
+  }
+}

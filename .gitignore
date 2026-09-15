@@ -1,0 +1,21 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+.cache/
+wandb/
+
+# Third-party datasets, extracted clips, cached features, and model weights.
+data/raw/
+data/processed/
+data/features/
+*.pt
+*.pth
+*.ckpt
+*.tar
+*.zip
+
+# Machine-specific files and generated outputs.
+.env
+outputs/
+tmp/

@@ -1,0 +1,32 @@
+{
+  "msrvtt_to_msvd": {
+    "reports": 9,
+    "mean_spearman": 0.1393939393939394,
+    "sample_std": 0.23983465378678034
+  },
+  "msvd_to_msrvtt": {
+    "reports": 9,
+    "mean_spearman": 0.9242424242424243,
+    "sample_std": 0.05162643950727523
+  },
+  "msrvtt_to_vatex": {
+    "reports": 9,
+    "mean_spearman": 0.8868686868686869,
+    "sample_std": 0.05164866833048275
+  },
+  "vatex_to_msrvtt": {
+    "reports": 9,
+    "mean_spearman": 0.8909090909090909,
+    "sample_std": 0.045226701686664546
+  },
+  "msvd_to_vatex": {
+    "reports": 9,
+    "mean_spearman": 0.9555555555555556,
+    "sample_std": 0.027814484470736107
+  },
+  "vatex_to_msvd": {
+    "reports": 9,
+    "mean_spearman": 0.498989898989899,
+    "sample_std": 0.2546852069463044
+  }
+}\n

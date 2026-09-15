@@ -1,0 +1,610 @@
+{
+  "bootstrap_repetitions": 5000,
+  "bootstrap_seed": 2027,
+  "transfers": {
+    "msrvtt_to_msvd": {
+      "cycle_minus_mean_pool": {
+        "video_to_text": {
+          "r_at_1": {
+            "delta_mean": 0.07835325365205843,
+            "delta_sample_std": 0.013801201653935277,
+            "paired_bootstrap_95_ci": [
+              0.06529437804338202,
+              0.0918548030101815
+            ],
+            "bootstrap_unit": "examples resampled within each source-adapter and target-split report"
+          },
+          "r_at_5": {
+            "delta_mean": 0.045595396193005754,
+            "delta_sample_std": 0.01757747874096819,
+            "paired_bootstrap_95_ci": [
+              0.033200531208499334,
+              0.05754758742806551
+            ],
+            "bootstrap_unit": "examples resampled within each source-adapter and target-split report"
+          },
+          "r_at_10": {
+            "delta_mean": 0.03873395307658256,
+            "delta_sample_std": 0.0169940025127088,
+            "paired_bootstrap_95_ci": [
+              0.027888446215139442,
+              0.050022133687472325
+            ],
+            "bootstrap_unit": "examples resampled within each source-adapter and target-split report"
+          }
+        },
+        "text_to_video": {
+          "r_at_1": {
+            "delta_mean": 0.022508744430308505,
+            "delta_sample_std": 0.006459225659419703,
+            "paired_bootstrap_95_ci": [
+              0.021091676638668986,
+              0.023930798828838157
+            ],
+            "bootstrap_unit": "examples resampled within each source-adapter and target-split report"
+          },
+          "r_at_5": {
+            "delta_mean": 0.032118195662357414,
+            "delta_sample_std": 0.005573274467382081,
+            "paired_bootstrap_95_ci": [
+              0.030625098795516684,
+              0.033567370749010866
+            ],
+            "bootstrap_unit": "examples resampled within each source-adapter and target-split report"
+          },
+          "r_at_10": {
+            "delta_mean": 0.03644557052682637,
+            "delta_sample_std": 0.00559094669703962,
+            "paired_bootstrap_95_ci": [
+              0.03505144495492135,
+              0.03773407311723897
+            ],
+            "bootstrap_unit": "examples resampled within each source-adapter and target-split report"
+          }
+        }
+      },
+      "max_similarity_minus_mean_pool": {
+        "video_to_text": {
+          "r_at_1": {
+            "delta_mean": 0.07901726427622842,
+            "delta_sample_std": 0.013908605621283808,
+            "paired_bootstrap_95_ci": [
+              0.06839309428950863,
+              0.09008410801239487
+            ],
+            "bootstrap_unit": "examples resampled within each source-adapter and target-split report"
+          },
+          "r_at_5": {
+            "delta_mean": 0.06418769366976539,
+            "delta_sample_std": 0.007828569802491098,
+            "paired_bootstrap_95_ci": [
+              0.0551128818061089,
+              0.07348384240814519
+            ],
+            "bootstrap_unit": "examples resampled within each source-adapter and target-split report"
+          },
+          "r_at_10": {
+            "delta_mean": 0.053563523683045594,
+            "delta_sample_std": 0.007349250870245237,
+            "paired_bootstrap_95_ci": [
+              0.04537405931828243,
+              0.06197432492253209
+            ],
+            "bootstrap_unit": "examples resampled within each source-adapter and target-split report"
+          }
+        },
+        "text_to_video": {
+          "r_at_1": {
+            "delta_mean": 0.014185341016683768,
+            "delta_sample_std": 0.003763871388296079,
+            "paired_bootstrap_95_ci": [
+              0.013212887013922077,
+              0.015146612529642545
+            ],
+            "bootstrap_unit": "examples resampled within each source-adapter and target-split report"
+          },
+          "r_at_5": {
+            "delta_mean": 0.022355120154724042,
+            "delta_sample_std": 0.0032656887628337403,
+            "paired_bootstrap_95_ci": [
+              0.02131314702338013,
+              0.023408087045184274
+            ],
+            "bootstrap_unit": "examples resampled within each source-adapter and target-split report"
+          },
+          "r_at_10": {
+            "delta_mean": 0.0227549587636467,
+            "delta_sample_std": 0.002643923002646104,
+            "paired_bootstrap_95_ci": [
+              0.021783875908434693,
+              0.023658650056024244
+            ],
+            "bootstrap_unit": "examples resampled within each source-adapter and target-split report"
+          }
+        }
+      },
+      "max_margin_minus_mean_pool": {
+        "video_to_text": {
+          "r_at_1": {
+            "delta_mean": 0.06440903054448871,
+            "delta_sample_std": 0.02173050222038987,
+            "paired_bootstrap_95_ci": [
+              0.05046480743691899,
+              0.0787959274015051
+            ],
+            "bootstrap_unit": "examples resampled within each source-adapter and target-split report"
+          },
+          "r_at_5": {
+            "delta_mean": 0.023019034971226208,
+            "delta_sample_std": 0.01187354232552966,
+            "paired_bootstrap_95_ci": [
+              0.01018149623727313,
+              0.03607791057990261
+            ],
+            "bootstrap_unit": "examples resampled within each source-adapter and target-split report"
+          },
+          "r_at_10": {
+            "delta_mean": 0.019034971226206288,
+            "delta_sample_std": 0.010639721353892474,
+            "paired_bootstrap_95_ci": [
+              0.006861443116423197,
+              0.030987162461266052
+            ],
+            "bootstrap_unit": "examples resampled within each source-adapter and target-split report"
+          }
+        },
+        "text_to_video": {
+          "r_at_1": {
+            "delta_mean": 0.021267532404300935,
+            "delta_sample_std": 0.009657745629193512,
+            "paired_bootstrap_95_ci": [
+              0.01968213627336589,
+              0.022837835062903152
+            ],
+            "bootstrap_unit": "examples resampled within each source-adapter and target-split report"
+          },
+          "r_at_5": {
+            "delta_mean": 0.029359476891877186,
+            "delta_sample_std": 0.009456729141741298,
+            "paired_bootstrap_95_ci": [
+              0.027734319008870658,
+              0.03098502359601561
+            ],
+            "bootstrap_unit": "examples resampled within each source-adapter and target-split report"
+          },
+          "r_at_10": {
+            "delta_mean": 0.033170121771213396,
+            "delta_sample_std": 0.007543631951651893,
+            "paired_bootstrap_95_ci": [
+              0.03160316688638953,
+              0.034664551959214064
+            ],
+            "bootstrap_unit": "examples resampled within each source-adapter and target-split report"
+          }
+        }
+      },
+      "max_similarity_minus_cycle": {
+        "video_to_text": {
+          "r_at_1": {
+            "delta_mean": 0.0006640106241699869,
+            "delta_sample_std": 0.014330173874440397,
+            "paired_bootstrap_95_ci": [
+              -0.009738822487826471,
+              0.011066843736166445
+            ],
+            "bootstrap_unit": "examples resampled within each source-adapter and target-split report"
+          },
+          "r_at_5": {
+            "delta_mean": 0.01859229747675963,
+            "delta_sample_std": 0.021501029028807673,
+            "paired_bootstrap_95_ci": [
+              0.009517485613103144,
+              0.027224435590969456
+            ],
+            "bootstrap_unit": "examples resampled within each source-adapter and target-split report"
+          },
+          "r_at_10": {
+            "delta_mean": 0.014829570606463036,
+            "delta_sample_std": 0.01831453972749044,
+            "paired_bootstrap_95_ci": [
+              0.006640106241699867,
+              0.023019034971226208
+            ],
+            "bootstrap_unit": "examples resampled within each source-adapter and target-split report"
+          }
+        },
+        "text_to_video": {
+          "r_at_1": {
+            "delta_mean": -0.008323403413624737,
+            "delta_sample_std": 0.004275289860718502,
+            "paired_bootstrap_95_ci": [
+              -0.009420682587844497,
+              -0.00725402882309551
+            ],
+            "bootstrap_unit": "examples resampled within each source-adapter and target-split report"
+          },
+          "r_at_5": {
+            "delta_mean": -0.00976307550763337,
+            "delta_sample_std": 0.0039026430269170904,
+            "paired_bootstrap_95_ci": [
+              -0.010898842059235098,
+              -0.008625349207106153
+            ],
+            "bootstrap_unit": "examples resampled within each source-adapter and target-split report"
+          },
+          "r_at_10": {
+            "delta_mean": -0.013690611763179672,
+            "delta_sample_std": 0.0056349686777139125,
+            "paired_bootstrap_95_ci": [
+              -0.014722303085981738,
+              -0.01262907455410132
+            ],
+            "bootstrap_unit": "examples resampled within each source-adapter and target-split report"
+          }
+        }
+      },
+      "max_margin_minus_cycle": {
+        "video_to_text": {
+          "r_at_1": {
+            "delta_mean": -0.013944223107569721,
+            "delta_sample_std": 0.017308911550779647,
+            "paired_bootstrap_95_ci": [
+              -0.02080566622399292,
+              -0.006861443116423196
+            ],
+            "bootstrap_unit": "examples resampled within each source-adapter and target-split report"
+          },
+          "r_at_5": {
+            "delta_mean": -0.02257636122177955,
+            "delta_sample_std": 0.023506820161764835,
+            "paired_bootstrap_95_ci": [
+              -0.028773793714032755,
+              -0.01637892872952634
+            ],
+            "bootstrap_unit": "examples resampled within each source-adapter and target-split report"
+          },
+          "r_at_10": {
+            "delta_mean": -0.019698981850376274,
+            "delta_sample_std": 0.02111564225253366,
+            "paired_bootstrap_95_ci": [
+              -0.025453740593182825,
+              -0.013944223107569721
+            ],
+            "bootstrap_unit": "examples resampled within each source-adapter and target-split report"
+          }
+        },
+        "text_to_video": {
+          "r_at_1": {
+            "delta_mean": -0.001241212026007568,
+            "delta_sample_std": 0.003964772305498856,
+            "paired_bootstrap_95_ci": [
+              -0.002174228735823804,
+              -0.00032719924361693063
+            ],
+            "bootstrap_unit": "examples resampled within each source-adapter and target-split report"
+          },
+          "r_at_5": {
+            "delta_mean": -0.0027587187704802276,
+            "delta_sample_std": 0.005050701477623643,
+            "paired_bootstrap_95_ci": [
+              -0.0036728102959578536,
+              -0.0018305843707037955
+            ],
+            "bootstrap_unit": "examples resampled within each source-adapter and target-split report"
+          },
+          "r_at_10": {
+            "delta_mean": -0.00327544875561298,
+            "delta_sample_std": 0.003824549252239064,
+            "paired_bootstrap_95_ci": [
+              -0.0041577583499341235,
+              -0.002452342561853018
+            ],
+            "bootstrap_unit": "examples resampled within each source-adapter and target-split report"
+          }
+        }
+      }
+    },
+    "msvd_to_msrvtt": {
+      "cycle_minus_mean_pool": {
+        "video_to_text": {
+          "r_at_1": {
+            "delta_mean": 0.08266666666666667,
+            "delta_sample_std": 0.02710473513367483,
+            "paired_bootstrap_95_ci": [
+              0.07125925925925926,
+              0.09407407407407407
+            ],
+            "bootstrap_unit": "examples resampled within each source-adapter and target-split report"
+          },
+          "r_at_5": {
+            "delta_mean": 0.041777777777777775,
+            "delta_sample_std": 0.016772994167212167,
+            "paired_bootstrap_95_ci": [
+              0.03274074074074074,
+              0.05081481481481482
+            ],
+            "bootstrap_unit": "examples resampled within each source-adapter and target-split report"
+          },
+          "r_at_10": {
+            "delta_mean": 0.03037037037037037,
+            "delta_sample_std": 0.012645205991517151,
+            "paired_bootstrap_95_ci": [
+              0.02281111111111111,
+              0.037925925925925925
+            ],
+            "bootstrap_unit": "examples resampled within each source-adapter and target-split report"
+          }
+        },
+        "text_to_video": {
+          "r_at_1": {
+            "delta_mean": -0.013414814814814815,
+            "delta_sample_std": 0.012656170114821808,
+            "paired_bootstrap_95_ci": [
+              -0.015363148148148148,
+              -0.011422222222222222
+            ],
+            "bootstrap_unit": "examples resampled within each source-adapter and target-split report"
+          },
+          "r_at_5": {
+            "delta_mean": -0.01205925925925926,
+            "delta_sample_std": 0.01417233002267464,
+            "paired_bootstrap_95_ci": [
+              -0.013888888888888888,
+              -0.010199814814814816
+            ],
+            "bootstrap_unit": "examples resampled within each source-adapter and target-split report"
+          },
+          "r_at_10": {
+            "delta_mean": -0.012103703703703703,
+            "delta_sample_std": 0.011943018002680298,
+            "paired_bootstrap_95_ci": [
+              -0.013888888888888888,
+              -0.01037777777777778
+            ],
+            "bootstrap_unit": "examples resampled within each source-adapter and target-split report"
+          }
+        }
+      },
+      "max_similarity_minus_mean_pool": {
+        "video_to_text": {
+          "r_at_1": {
+            "delta_mean": 0.09451851851851852,
+            "delta_sample_std": 0.01677888149423348,
+            "paired_bootstrap_95_ci": [
+              0.08488888888888889,
+              0.1037037037037037
+            ],
+            "bootstrap_unit": "examples resampled within each source-adapter and target-split report"
+          },
+          "r_at_5": {
+            "delta_mean": 0.052444444444444446,
+            "delta_sample_std": 0.008717797887081347,
+            "paired_bootstrap_95_ci": [
+              0.04458888888888889,
+              0.06029629629629629
+            ],
+            "bootstrap_unit": "examples resampled within each source-adapter and target-split report"
+          },
+          "r_at_10": {
+            "delta_mean": 0.036444444444444446,
+            "delta_sample_std": 0.01131370849898476,
+            "paired_bootstrap_95_ci": [
+              0.029629629629629634,
+              0.04325925925925926
+            ],
+            "bootstrap_unit": "examples resampled within each source-adapter and target-split report"
+          }
+        },
+        "text_to_video": {
+          "r_at_1": {
+            "delta_mean": 0.0030592592592592594,
+            "delta_sample_std": 0.0008255936883671077,
+            "paired_bootstrap_95_ci": [
+              0.001370185185185185,
+              0.004681481481481481
+            ],
+            "bootstrap_unit": "examples resampled within each source-adapter and target-split report"
+          },
+          "r_at_5": {
+            "delta_mean": 0.0053851851851851856,
+            "delta_sample_std": 0.0031541467903870046,
+            "paired_bootstrap_95_ci": [
+              0.0038516666666666664,
+              0.006970370370370371
+            ],
+            "bootstrap_unit": "examples resampled within each source-adapter and target-split report"
+          },
+          "r_at_10": {
+            "delta_mean": 0.003911111111111111,
+            "delta_sample_std": 0.0024531159323965463,
+            "paired_bootstrap_95_ci": [
+              0.0024740740740740743,
+              0.005318703703703701
+            ],
+            "bootstrap_unit": "examples resampled within each source-adapter and target-split report"
+          }
+        }
+      },
+      "max_margin_minus_mean_pool": {
+        "video_to_text": {
+          "r_at_1": {
+            "delta_mean": 0.09614814814814815,
+            "delta_sample_std": 0.017210390200811762,
+            "paired_bootstrap_95_ci": [
+              0.08503333333333332,
+              0.10725925925925926
+            ],
+            "bootstrap_unit": "examples resampled within each source-adapter and target-split report"
+          },
+          "r_at_5": {
+            "delta_mean": 0.048296296296296296,
+            "delta_sample_std": 0.010515127257174203,
+            "paired_bootstrap_95_ci": [
+              0.03955555555555555,
+              0.05718518518518519
+            ],
+            "bootstrap_unit": "examples resampled within each source-adapter and target-split report"
+          },
+          "r_at_10": {
+            "delta_mean": 0.0357037037037037,
+            "delta_sample_std": 0.010408923047671438,
+            "paired_bootstrap_95_ci": [
+              0.028,
+              0.043259259259259254
+            ],
+            "bootstrap_unit": "examples resampled within each source-adapter and target-split report"
+          }
+        },
+        "text_to_video": {
+          "r_at_1": {
+            "delta_mean": -0.009007407407407407,
+            "delta_sample_std": 0.00599633633001986,
+            "paired_bootstrap_95_ci": [
+              -0.010866851851851851,
+              -0.0070664814814814835
+            ],
+            "bootstrap_unit": "examples resampled within each source-adapter and target-split report"
+          },
+          "r_at_5": {
+            "delta_mean": -0.006125925925925926,
+            "delta_sample_std": 0.005374781075070711,
+            "paired_bootstrap_95_ci": [
+              -0.007925925925925927,
+              -0.004311111111111111
+            ],
+            "bootstrap_unit": "examples resampled within each source-adapter and target-split report"
+          },
+          "r_at_10": {
+            "delta_mean": -0.006207407407407407,
+            "delta_sample_std": 0.0038415049777173475,
+            "paired_bootstrap_95_ci": [
+              -0.007874074074074073,
+              -0.004533148148148151
+            ],
+            "bootstrap_unit": "examples resampled within each source-adapter and target-split report"
+          }
+        }
+      },
+      "max_similarity_minus_cycle": {
+        "video_to_text": {
+          "r_at_1": {
+            "delta_mean": 0.011851851851851853,
+            "delta_sample_std": 0.020938475424118627,
+            "paired_bootstrap_95_ci": [
+              0.004296296296296295,
+              0.01911111111111111
+            ],
+            "bootstrap_unit": "examples resampled within each source-adapter and target-split report"
+          },
+          "r_at_5": {
+            "delta_mean": 0.010666666666666666,
+            "delta_sample_std": 0.010456258094238748,
+            "paired_bootstrap_95_ci": [
+              0.00488888888888889,
+              0.016148148148148148
+            ],
+            "bootstrap_unit": "examples resampled within each source-adapter and target-split report"
+          },
+          "r_at_10": {
+            "delta_mean": 0.006074074074074075,
+            "delta_sample_std": 0.01304881622746951,
+            "paired_bootstrap_95_ci": [
+              0.0013333333333333329,
+              0.010814814814814814
+            ],
+            "bootstrap_unit": "examples resampled within each source-adapter and target-split report"
+          }
+        },
+        "text_to_video": {
+          "r_at_1": {
+            "delta_mean": 0.016474074074074075,
+            "delta_sample_std": 0.0133948350097443,
+            "paired_bootstrap_95_ci": [
+              0.01522962962962963,
+              0.01765925925925926
+            ],
+            "bootstrap_unit": "examples resampled within each source-adapter and target-split report"
+          },
+          "r_at_5": {
+            "delta_mean": 0.017444444444444443,
+            "delta_sample_std": 0.013838151771260656,
+            "paired_bootstrap_95_ci": [
+              0.01631111111111111,
+              0.01857777777777778
+            ],
+            "bootstrap_unit": "examples resampled within each source-adapter and target-split report"
+          },
+          "r_at_10": {
+            "delta_mean": 0.016014814814814815,
+            "delta_sample_std": 0.012657135790523584,
+            "paired_bootstrap_95_ci": [
+              0.014896111111111112,
+              0.017103703703703704
+            ],
+            "bootstrap_unit": "examples resampled within each source-adapter and target-split report"
+          }
+        }
+      },
+      "max_margin_minus_cycle": {
+        "video_to_text": {
+          "r_at_1": {
+            "delta_mean": 0.013481481481481481,
+            "delta_sample_std": 0.023261264362735883,
+            "paired_bootstrap_95_ci": [
+              0.007703703703703703,
+              0.01925925925925926
+            ],
+            "bootstrap_unit": "examples resampled within each source-adapter and target-split report"
+          },
+          "r_at_5": {
+            "delta_mean": 0.006518518518518519,
+            "delta_sample_std": 0.015526957839611933,
+            "paired_bootstrap_95_ci": [
+              0.0016259259259259267,
+              0.011407407407407406
+            ],
+            "bootstrap_unit": "examples resampled within each source-adapter and target-split report"
+          },
+          "r_at_10": {
+            "delta_mean": 0.005333333333333334,
+            "delta_sample_std": 0.014391355429948603,
+            "paired_bootstrap_95_ci": [
+              0.0014814814814814814,
+              0.009185185185185185
+            ],
+            "bootstrap_unit": "examples resampled within each source-adapter and target-split report"
+          }
+        },
+        "text_to_video": {
+          "r_at_1": {
+            "delta_mean": 0.004407407407407407,
+            "delta_sample_std": 0.015880751607053687,
+            "paired_bootstrap_95_ci": [
+              0.003414629629629629,
+              0.005385185185185184
+            ],
+            "bootstrap_unit": "examples resampled within each source-adapter and target-split report"
+          },
+          "r_at_5": {
+            "delta_mean": 0.005933333333333333,
+            "delta_sample_std": 0.016760601951534372,
+            "paired_bootstrap_95_ci": [
+              0.00495537037037037,
+              0.006866666666666667
+            ],
+            "bootstrap_unit": "examples resampled within each source-adapter and target-split report"
+          },
+          "r_at_10": {
+            "delta_mean": 0.005896296296296296,
+            "delta_sample_std": 0.014685408900262233,
+            "paired_bootstrap_95_ci": [
+              0.005,
+              0.0067777777777777775
+            ],
+            "bootstrap_unit": "examples resampled within each source-adapter and target-split report"
+          }
+        }
+      }
+    }
+  }
+}
