@@ -19,17 +19,31 @@ Frozen OpenCLIP ViT-B/32 held-out R@1 (%). Each entry is `V2T / T2V`, mean +/- s
 | MSVD -> VATEX | 61.20 +/- 0.76 / 54.01 +/- 0.19 | 59.42 +/- 1.30 / 46.56 +/- 0.51 | 68.46 +/- 1.31 / 54.30 +/- 0.64 | **68.52 +/- 1.07 / 54.87 +/- 0.30** |
 | VATEX -> MSVD | 38.65 +/- 0.17 / 25.17 +/- 1.32 | 44.78 +/- 2.82 / 24.36 +/- 0.59 | 46.26 +/- 2.16 / 25.45 +/- 0.75 | **46.70 +/- 1.25 / 26.05 +/- 1.02** |
 
+## Temporal adapter controls
+
+Frozen OpenCLIP temporal controls are evaluated on the MSVD held-out test split. Values are V2T / T2V R@1 (%), reported as mean +/- sample standard deviation over three source-training seeds.
+
+| Setting | V2T R@1 | T2V R@1 |
+|---|---:|---:|
+| Full temporal adapter | 40.10 +/- 0.43 | 29.38 +/- 0.09 |
+| Reversed frames | 39.50 +/- 0.60 | 29.16 +/- 0.24 |
+| Attention only | 38.01 +/- 5.09 | 28.23 +/- 1.10 |
+| Without temporal convolution | 35.82 +/- 0.91 | 29.13 +/- 0.36 |
+| Mean pooling, no temporal adapter | 35.07 +/- 0.00 | 21.21 +/- 0.00 |
+
+The configurable ablation implementation is src/dire/configurable_temporal_adapter.py. Training and evaluation use scripts/video/train_temporal_adapter_ablation.py and scripts/video/evaluate_temporal_adapter_ablation.py. The compact released aggregate is results/analysis/openclip_temporal_ablation_summary.json.
+
 ## Repository layout
 
 ```text
 src/dire/                 temporal adapter, feature handling, retrieval metrics, CCTR selector
 scripts/data/             MSR-VTT/MSVD/VATEX manifest construction and split checks
-scripts/video/            main CCTR path: feature extraction, source training, target calibration, held-out evaluation
+scripts/video/            main CCTR path plus reproducible temporal-control ablations
 scripts/baselines/        comparison selectors: cycle agreement and source-validation tuning
 scripts/analysis/         selector reliability and calibration-budget analyses
 tests/                    unit and protocol tests for the released path
 results/openclip/         compact primary-result summaries and SHA-256 provenance
-results/analysis/         compact summaries for Figure 2 and calibration analyses
+results/analysis/         compact summaries for Figure 2, calibration, and temporal controls
 assets/figures/           pipeline image used in this README
 data/README.md            dataset access and local directory contract
 ```

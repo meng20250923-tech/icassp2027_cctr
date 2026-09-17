@@ -1,0 +1,66 @@
+{
+  "protocol": "Frozen OpenCLIP ViT-B/32 temporal controls on the MSVD held-out test split",
+  "aggregation": "mean and sample standard deviation over three source-training seeds",
+  "metrics": {
+    "full_temporal_adapter": {
+      "video_to_text_r_at_1": {
+        "mean": 0.40099503596623737,
+        "sample_std": 0.004308580503067297,
+        "count": 3
+      },
+      "text_to_video_r_at_1": {
+        "mean": 0.2938203016916911,
+        "sample_std": 0.0008942155089910284,
+        "count": 3
+      }
+    },
+    "reversed_frames": {
+      "video_to_text_r_at_1": {
+        "mean": 0.3950248857339223,
+        "sample_std": 0.006032023028121529,
+        "count": 3
+      },
+      "text_to_video_r_at_1": {
+        "mean": 0.2916351556777954,
+        "sample_std": 0.002424104878626412,
+        "count": 3
+      }
+    },
+    "attention_only": {
+      "video_to_text_r_at_1": {
+        "mean": 0.38009949525197345,
+        "sample_std": 0.050928853240696285,
+        "count": 3
+      },
+      "text_to_video_r_at_1": {
+        "mean": 0.2823302050431569,
+        "sample_std": 0.010951026640383983,
+        "count": 3
+      }
+    },
+    "without_temporal_convolution": {
+      "video_to_text_r_at_1": {
+        "mean": 0.35820895433425903,
+        "sample_std": 0.009078757657684837,
+        "count": 3
+      },
+      "text_to_video_r_at_1": {
+        "mean": 0.2912869652112325,
+        "sample_std": 0.0036425757636295852,
+        "count": 3
+      }
+    },
+    "mean_pooling_without_temporal_adapter": {
+      "video_to_text_r_at_1": {
+        "mean": 0.3507,
+        "sample_std": 0.0,
+        "count": 3
+      },
+      "text_to_video_r_at_1": {
+        "mean": 0.2121,
+        "sample_std": 0.0,
+        "count": 3
+      }
+    }
+  }
+}
