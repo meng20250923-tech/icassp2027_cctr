@@ -39,7 +39,7 @@ The configurable ablation implementation is src/dire/configurable_temporal_adapt
 src/dire/                 temporal adapter, feature handling, retrieval metrics, CCTR selector
 scripts/data/             MSR-VTT/MSVD/VATEX manifest construction and split checks
 scripts/video/            main CCTR path plus reproducible temporal-control ablations
-scripts/baselines/        comparison selectors: cycle agreement and source-validation tuning
+scripts/baselines/        comparison selector: reciprocal cycle agreement
 scripts/analysis/         selector reliability and calibration-budget analyses
 tests/                    unit and protocol tests for the released path
 results/openclip/         compact primary-result summaries and SHA-256 provenance
@@ -112,7 +112,7 @@ PYTHONPATH=src python scripts/video/evaluate_holdout_calibrated_temporal_transfe
 
 The reported CCTR selector is the mean bidirectional top-one similarity from `dire.temporal_transfer_calibration.unlabelled_retrieval_confidence`; the candidate grid is `{0.0, 0.1, ..., 1.0}`, with ties resolved toward the smaller value.
 
-`scripts/baselines/` contains two comparison protocols that are **not** the main CCTR result: reciprocal cycle agreement and source-validation-tuned residual transfer. They are retained only to reproduce the `Cycle` and source-tuning comparisons in the paper. The scripts under `scripts/analysis/` summarize saved reports and regenerate the calibration analyses.
+`scripts/baselines/` contains the reciprocal cycle-agreement comparison, which is **not** the main CCTR selector. The scripts under `scripts/analysis/` summarize saved reports and regenerate the calibration analyses.
 
 ## Verification
 
