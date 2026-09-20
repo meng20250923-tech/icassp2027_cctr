@@ -2,7 +2,9 @@
 
 Official implementation of **CCTR**, a label-free deployment rule for transferring a source-trained temporal adapter across video-text retrieval datasets.
 
-Given frozen video and text features, CCTR interpolates between multi-frame mean pooling and a source temporal representation. On an unpaired target calibration bank, it selects a global residual strength \(\lambda^*\) from bidirectional top-one similarity. No target video-caption correspondence, gradient, or target-side parameter update is used during calibration.
+This release uses frozen OpenCLIP ViT-B/32 features with the `laion2b_s34b_b79k` pretrained weights.
+
+Given frozen video and text features, CCTR interpolates between multi-frame mean pooling and a source temporal representation. On a target calibration bank with hidden video--caption correspondences, it selects a global residual strength \(\lambda^*\) from bidirectional top-one similarity. No target video-caption correspondence, gradient, or target-side parameter update is used during calibration.
 
 ![CCTR pipeline](assets/figures/cctr_pipeline.png)
 
@@ -53,8 +55,8 @@ data/README.md            dataset access and local directory contract
 Python 3.10+ and PyTorch are required. Install the PyTorch build matching your CUDA/CPU environment first, then:
 
 ```bash
-git clone https://github.com/<YOUR-ACCOUNT>/CCTR.git
-cd CCTR
+git clone https://github.com/meng20250923-tech/icassp2027_cctr.git
+cd icassp2027_cctr
 python -m venv .venv
 source .venv/bin/activate
 pip install --upgrade pip
@@ -100,7 +102,7 @@ PYTHONPATH=src python scripts/video/train_temporal_adapter.py \
   --output "$RUN_DIR/source_adapter.pt" --seed 2027
 
 # Extract disjoint MSVD calibration and held-out feature files, then select lambda on
-# the unpaired calibration bank and evaluate once on the held-out bank.
+# the target calibration bank with hidden video--caption correspondences and evaluate once on the held-out bank.
 PYTHONPATH=src python scripts/video/evaluate_holdout_calibrated_temporal_transfer.py \
   --calibration-features data/processed/features/msvd_calibration.pt \
   --evaluation-features data/processed/features/msvd_heldout.pt \
