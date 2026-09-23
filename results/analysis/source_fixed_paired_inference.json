@@ -1,0 +1,87 @@
+{
+  "comparison": "CCTR minus Source fixed in held-out balanced R@1 points",
+  "per_transfer": {
+    "msrvtt_to_msvd": {
+      "count": 9,
+      "cctr_minus_source_fixed_points": {
+        "mean": 0.13395084275139701,
+        "sample_std": 0.9634953915851512,
+        "wins": 5,
+        "ties": 0,
+        "losses": 4
+      }
+    },
+    "msrvtt_to_vatex": {
+      "count": 9,
+      "cctr_minus_source_fixed_points": {
+        "mean": 1.1755555868148804,
+        "sample_std": 1.0027684739195624,
+        "wins": 9,
+        "ties": 0,
+        "losses": 0
+      }
+    },
+    "msvd_to_msrvtt": {
+      "count": 9,
+      "cctr_minus_source_fixed_points": {
+        "mean": -0.013333227899339464,
+        "sample_std": 0.3969148632257673,
+        "wins": 5,
+        "ties": 0,
+        "losses": 4
+      }
+    },
+    "msvd_to_vatex": {
+      "count": 9,
+      "cctr_minus_source_fixed_points": {
+        "mean": 0.18222232659657797,
+        "sample_std": 0.31522514429013065,
+        "wins": 7,
+        "ties": 0,
+        "losses": 2
+      }
+    },
+    "vatex_to_msrvtt": {
+      "count": 9,
+      "cctr_minus_source_fixed_points": {
+        "mean": 0.39037101798587376,
+        "sample_std": 0.21168991723900954,
+        "wins": 9,
+        "ties": 0,
+        "losses": 0
+      }
+    },
+    "vatex_to_msvd": {
+      "count": 9,
+      "cctr_minus_source_fixed_points": {
+        "mean": 0.19608338673909506,
+        "sample_std": 0.4472058702512517,
+        "wins": 6,
+        "ties": 0,
+        "losses": 3
+      }
+    }
+  },
+  "matched_run_inference": {
+    "count": 54,
+    "wins": 41,
+    "ties": 0,
+    "losses": 13,
+    "mean": 0.3441416554980808,
+    "bootstrap_95_ci": [
+      0.16268557696430772,
+      0.5428849250354149
+    ],
+    "two_sided_sign_flip_pvalue": 0.0003899961000389996
+  },
+  "transfer_level_inference": {
+    "count": 6,
+    "mean": 0.3441416554980808,
+    "bootstrap_95_ci": [
+      0.10325682383996469,
+      0.6974899106555514
+    ],
+    "two_sided_exact_sign_flip_pvalue": 0.0625
+  },
+  "note": "Matched-run inference treats the 54 source-seed and target-split reports as paired observations. Transfer-level inference uses the six transfer means and is more conservative."
+}
